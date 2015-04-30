@@ -1,0 +1,4 @@
+<Files *.xgmml>
+ForceType application/xml
+Header set Content-Disposition attachment
+</Files>

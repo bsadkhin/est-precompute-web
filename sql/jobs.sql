@@ -1,0 +1,22 @@
+CREATE TABLE `jobs` (
+     `job_id` int(11) NOT NULL AUTO_INCREMENT,
+     `job_flag` varchar(255) NOT NULL,
+     `job_type` varchar(255) NOT NULL,
+     `job_release` int(11) NOT NULL,
+     `job_email` varchar(255) NOT NULL,
+     `job_family` varchar(255) DEFAULT NULL,
+     `job_network_type` varchar(255) DEFAULT NULL,
+     `job_network_name` varchar(255) DEFAULT NULL,
+     `job_expect_cutoff` int(11) DEFAULT NULL,
+     `job_pid_cutoff` int(11) DEFAULT NULL,
+     `job_min_length` int(11) DEFAULT NULL,
+     `job_max_length` int(11) DEFAULT NULL,
+     `job_sequence` text,
+     `job_time_submit` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+     `job_time_start` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+     `job_time_end` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+     `job_session` varchar(255) DEFAULT NULL,
+     `job_pbs_id` varchar(255) DEFAULT NULL,
+     `job_ip` varchar(255) DEFAULT NULL,
+     PRIMARY KEY (`job_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=latin1

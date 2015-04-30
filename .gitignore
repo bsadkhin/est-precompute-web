@@ -1,0 +1,6 @@
+/log/*
+/html/data/*
+/conf/settings.inc.php
+/html/admin/.htaccess
+*.swp
+*.swo

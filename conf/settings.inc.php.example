@@ -1,0 +1,45 @@
+<?php
+////////////////////////////////////
+//                                              
+//      EST-Precompute                         
+//      settings.inc.php                        
+//                                              
+//      Settings for the scripts.               
+//    
+//      Modified :  Boris Sadkhin                                          
+//      Author : David Slater                            
+//      June 2014                                
+//                                              
+////////////////////////////////////
+
+////////System Settings///////////
+define("__ENABLE_WEBSITE__",True);
+define("__ENABLE_EMAILS__",True);
+define("__TITLE__","EFI-EST-Precompute");
+define("__INTERPRO_VERSION__","48");
+define("__TIMEZONE__","America/Chicago");
+define("__ADMIN_EMAIL__","do-not-reply@example.com");
+define("__WEB_ROOT__","http://example.com");
+////////MySQL Settings///////////
+define("__MYSQL_HOST__","db-hostname");
+define("__MYSQL_USER__","db-user");
+define("__MYSQL_PASSWORD__","password");
+define("__MYSQL_DATABASE__","db-name");
+
+////////Cluster Settings////////////
+define("__CLUSTER_USER__","efi-precompute");
+define("__CLUSTER_QUEUE__","efi");
+define("__CLUSTER_ACCOUNT__","efi");
+define("__PRECOMPUTE_DIR__","dir");
+define("__PRECOMPUTE_JOBS_DIR__","dir");
+define("__EFI_MODULE__","est-precompute/48");
+
+///////Status/////////////
+define("__NEW__","NEW");
+define("__RUNNING__","RUNNING");
+define("__FINISH__","FINISH");
+define("__FAILED__","FAILED");
+
+define("__MINIMUM__",0);
+define("__MAXIMUM__",50000);
+?>
